@@ -31,8 +31,8 @@ def load_artifacts():
   partner = st.sidebar.selectbox("Partner", ["No", "Yes"])
   dependents = st.sidebar.selectbox("Dependents", ["No", "Yes"])
   tenure = st.sidebar.slider("Tenure", 0, 72, 12)
-  monthly = st.sidebar.number_input("Monthly Charges", =0.0,200.0,70.0)
-  total = st.sidebar.number_input("Total Charges", 0.0,10000.0,1000.0)
+  monthly = st.sidebar.number_input("Monthly Charges",0.0,200.0,70.0)
+  total = st.sidebar.number_input("Total Charges",0.0,10000.0,1000.0)
 
   def FEATURE_ENGINEERING():
     row = {c:0 for c in feature_names}
