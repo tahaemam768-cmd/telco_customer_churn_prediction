@@ -55,5 +55,5 @@ def load_artifacts():
     else:
       st.success("Customer is likely to stay")
 
-      st.metric("Churn Probability", f"{proba[1]*100:.2f}%")
-      st.metric("Stay Probability", f"{proba[0]*100:.2f}%")
+    st.metric("Churn Probability", f"{proba[1]*100:.2f}%")
+    st.metric("Stay Probability", f"{proba[0]*100:.2f}%")
